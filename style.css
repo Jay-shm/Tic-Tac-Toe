@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text {
+    color: #770081; /* Purple */
+}
+
+body {
+    background-color: #eccce5; /* Light Pink */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    background-color: #f8ccf9; /* Light Purple */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1vmin;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.box:hover {
+    background-color: #ae9da9; /* Grayish Purple */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #e896f3; /* Gray */
+    font-size: 10vmin;
+    border: 2px solid #7e4b8b; /* Purple border */
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.win {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: #7e4b8b; /* Purple */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.win.show {
+    opacity: 1;
+}
+
+.buttons {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newg {
+    background-color: #7e4b8b; /* Purple */
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fbf1f9; /* Light Pink */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#newg:hover {
+    background-color: #5a3264; /* Darker Purple */
+}
